@@ -1,0 +1,20 @@
+torch==2.3.0
+torchvision==0.18.0
+# the vendored ALBEF/BLIP/X-VLM text encoders do not import under transformers>=5
+transformers==4.28.1
+timm==0.6.13
+einops>=0.6.0
+ruamel.yaml==0.15.80
+ftfy==6.1.1
+regex==2024.7.24
+pillow==10.4.0
+numpy==1.24.4
+pandas
+tqdm==4.66.4
+# imported at module load by models/blip_model/vit.py and models/xvlm_model/swin_transformer.py
+fairscale==0.4.13
+scipy<=1.10.1
+# pd.ExcelWriter in eval_semcom_uap.py
+openpyxl
+# models/clip_model/clip.py imports pkg_resources, which setuptools>=81 removes
+setuptools<81

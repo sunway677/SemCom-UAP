@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+*.pth
+checkpoint/
+output*/
+result*/
+cache*/
+logs/*
+!logs/.gitkeep
+data/
+flickr30k-images/
+.idea/
+.vscode/
+.DS_Store
+
+# word-embedding caches written by scripts/generate_word_embeddings.py
+word_embedding_*.pth
+word_idx_*.npy
+# vocabulary index files shipped with the repo
+!word_idx_ALBEF.npy
+!word_idx_CLIP.npy
